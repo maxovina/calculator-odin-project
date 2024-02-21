@@ -1,26 +1,41 @@
+@font-face {
+    font-family: digitalFont;
+    src: url(fonts/digitalFont.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .calcCont {
     margin: 0 auto;
     margin-top: 100px;
     width: 500px;
-    height: 700px;
+    height: 750px;
     background-color: #222;
-    border-top: 3px solid #1c40d7;
+    border-top: 3px solid #5f7fff;
     border-right: 5px solid #1c40d7;
-    border-bottom: 10px solid #1c40d7;
+    border-bottom: 15px solid #112fa5;
     border-left: 5px solid #1c40d7;
     padding: 15px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px -8px 5px 10px rgba(0,0,0,0.31) inset;
+    -webkit-box-shadow: -1px -8px 5px 10px rgba(0,0,0,0.31) inset;
+    -moz-box-shadow: -1px -8px 5px 10px rgba(0,0,0,0.31) inset;
+    border-radius: 5px;
 }
 
 .topPicoviny {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    gap: 150px;
 }
 
 .brandName {
@@ -34,7 +49,86 @@
 .solarPanel {
     width: 100px;
     height: 40px;
-    background-color: rgb(68, 67, 13);
+    background-color: rgb(141, 139, 46);
     margin: 10px;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25) inset;
+    -moz-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25) inset;
+}
+
+.calcDisplay {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgb(135, 170, 112);
+    border-radius: 5px;
+    display: flex;
+    align-self: center;
+    padding: 0 10px;
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25) inset;
+    -moz-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.25) inset;
+}
+
+.calcDisplay h2 {
+    font-family: digitalFont;
+    font-size: 3.7rem;
+    color: #181818;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.buttonContainer {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.buttonContainer button {
+    width: 80px;
+    height: 75px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-top: 0px solid #a0a0a0;
+    border-right: 2px solid #a0a0a0;
+    border-bottom: 7px solid #7e7c7c;
+    border-left: 2px solid #a0a0a0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+}
+
+#clearButton {
+    background-color: rgb(190, 190, 9);
+    border-top: 0px solid rgb(148, 148, 11);
+    border-right: 2px solid rgb(148, 148, 11);;
+    border-bottom: 7px solid rgb(148, 148, 11);
+    border-left: 2px solid rgb(124, 124, 11);;
+}
+
+#clearButton:hover {
+    background-color: rgb(177, 177, 18);
+}
+
+#deleteButton {
+    margin-left: 300px;
+    margin-top: 25px ;
+    margin-bottom: 25px;
+    width: 80px;
+    height: 75px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-top: 0px solid #a0a0a0;
+    border-right: 2px solid #a0a0a0;
+    border-bottom: 7px solid #7e7c7c;
+    border-left: 2px solid #a0a0a0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
 }
