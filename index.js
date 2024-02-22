@@ -36,6 +36,9 @@ negateBtn.addEventListener('click', () => handleNegateBtn())
 
 function handleNumber(num){
     if(currentValue.length < 6){
+        if(currentValue.includes('.') && num == '.'){
+            return 
+        }
         currentValue += num;
     }
     displayScreen.textContent = currentValue;
