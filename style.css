@@ -85,10 +85,11 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 45px;
 
 }
 
-.buttonContainer button {
+.inputButtons{
     width: 80px;
     height: 75px;
     font-size: 1.5em;
@@ -103,7 +104,7 @@
     box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
 }
 
-#clearButton {
+.clearButton {
     background-color: rgb(190, 190, 9);
     border-top: 0px solid rgb(148, 148, 11);
     border-right: 2px solid rgb(148, 148, 11);;
@@ -111,8 +112,20 @@
     border-left: 2px solid rgb(124, 124, 11);;
 }
 
-#clearButton:hover {
+.clearButton:hover {
     background-color: rgb(177, 177, 18);
+}
+
+.evalButton {
+    background-color: rgb(190, 60, 9);
+    border-top: 0px solid rgb(155, 51, 10);
+    border-right: 2px solid rgb(138, 46, 9);;
+    border-bottom: 7px solid rgb(116, 36, 5);
+    border-left: 2px solid rgb(138, 46, 9);
+}
+
+.evalButton:hover {
+    background-color: rgb(182, 55, 8);
 }
 
 #deleteButton {
